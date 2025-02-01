@@ -1,0 +1,2 @@
+# React Functional Component State Update Bug
+This repository demonstrates a common bug in React functional components when updating state using the previous state value incorrectly.  The `count++` approach inside `setCount` doesn't work as expected because it uses the old value after the update is done.  The correct method involves using the updater function form of `setCount` to guarantee the correct update.
